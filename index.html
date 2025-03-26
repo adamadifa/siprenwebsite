@@ -13,9 +13,11 @@
 
 <body>
     <header
-        class="bg-[#125a50] bg-[url('/assets/bg.png')] bg-blend-overlay md:bg-blend-multiply  bg-center bg-no-repeat">
+        class="bg-[#0b3a34] bg-[url('/assets/bg.png')] bg-blend-overlay md:bg-blend-multiply  bg-center bg-no-repeat">
 
-        <nav class="bg-transparent dark:bg-gray-900 fixed w-full z-20 top-0 start-0 shadow-md">
+        <nav class="bg-transparent fixed w-full z-20 top-0 start-0 shadow-md" id="nav">
+            
+
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
                     <img src="/assets/logowithtext.png" class="h-15" "Al Amin Logo" />
@@ -35,10 +37,9 @@
                 </button>
                 <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                     <ul
-                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#125a50] rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-[#125a50] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#125a50] rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-[#125a50] ">
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-yellow-400 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                            <a href="#" class="block py-2 px-3 rounded-sm md:bg-transparent md:text-yellow-400 md:p-0 "
                                 aria-current="page">Beranda</a>
                         </li>
                         <li>
@@ -101,12 +102,12 @@
         </nav>
 
         <!-- Jumbotron -->
-        <section class="bg-transparent md:pt-36 pt-10">
-            <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:p-0 flex flex-col lg:flex-row items-center">
-                <div class="order-first lg:order-last">
-                    <img src="assets/model1.png" alt="" class="mb-8 lg:mb-0 h-1/2">
+        <section class="bg-transparent md:pt-36 pt-10 h-[calc(100vh-192px)]" id="jumbotron">
+            <div class="px-4 mx-auto max-w-screen-xl text-center py-24 flex flex-col lg:flex-row items-center">
+                <div class="order-first lg:order-last" id="model-1">
+                    <img src="assets/model1.png" alt="" class="mb-8 lg:mb-0 h-1/2 shadow-xl">
                 </div>
-                <div>
+                <div id="highlight">
                     <h1
                         class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-left  text-white md:text-5xl lg:text-6xl">
                         We invest in the world’s potential
@@ -134,7 +135,7 @@
             </div>
         </section>
 
-        <!-- Program Unggulan-->
+        <!-- 4 Pilar Pendidikan-->
         <section class="h-48 shadow-[0px_-4px_4px_rgba(0,0,0,0.25)]">
 
             <div class="max-w-screen-xl mx-auto py-6 grid grid-cols-4 space-x-4 ">
@@ -179,12 +180,71 @@
             </div>
         </section>
     </header>
+    <!-- About Us-->
+    <section class="py-10" id="tentangkami">
+        <div class="flex flex-row gap-4 max-w-screen-xl mx-auto ">
+            <div class="w-2/3">
+                <img src="/assets/paridwajdi.png" class="w-19/20" alt="">
+            </div>
+            <div class="w-3/2">
+                <h4 class="text-4xl text-slate-600 mb-5 font-bold">Tentang Pesantren</h4>
+                <p class="text-slate-500">
+                    Berawal dari sebuah mesjid yang dibangun pada tahun 1986. Mesjid ini diberi nama Masjid Al-Amin. Di Masjid tersebut, diadakan pengajian untuk anak-anak usia sekolah dasar setiap ba’da maghrib. Materinya adalah baca tulis Al-Qur’an.
 
+      Hari demi hari, semakin bertambahlah anak-anak yang ikut mengaji. Hingga bermusyawarahlah para orangtua beserta pengurus Masjid. Hasil kesepakatan musyawarah pada saat itu, didirikanlah sebuah lembaga pendidikan agama untuk pemula yaitu Madrasah Diniyah. Di awal pembelajaran, santri belajar di teras masjid dan ruang tamu rumah H. Ukar Sukarya  sebagai pimpinan pesantren yang rumahnya berada di samping masjid Al-Amin.
+
+      Pada tahun 1989, melihat telah selesainya bangunan kelas, orangtua santri juga masyarakat menuntut untuk mendirikan Madrasah Tsanawiyah. Akhirnya, berdirilah Madrasah Tsanawiyah. Bila pagi hari santri-santri Tsanawiyyah yang memanfaatkan bangunan tersebut, maka di sore hari digunakan oleh tingkat Diniyyah. 9 tahun kemudian, tepatnya pada tahun 1998 orangtua santri Tsanawiyah mendesak untuk mendirikan Mu’allimin atau Madrasah Aliyah. Sehingga pada tahun itulah, didirikan Mu’allimin atau Madrasah Aliyah angkatan pertama.
+
+Sampai saat ini Para Santriwan dan santriwati  di Pesantren Persatuan Islam 80 Sindangkasih ini berasal dari berbagai daerah di Jawa Barat seperti Tasikmalaya Kota dan Kabupaten, Ciamis, Bandung, Sumendang, Cimahi, juga dari luar Jawa Barat seperti DKI Jakarta, Banten, Sumatera, NTT dan daerah lainnya.
+                </p>
+            </div>
+        </div>
+    </section>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        window.addEventListener("scroll", function() {
+            var nav = document.getElementById("nav");
+            if (window.scrollY > 0) {
+                nav.classList.add("bg-[#021713]");
+                nav.classList.remove("bg-transparent");
+                nav.classList.remove("shadow-md");
+                nav.classList.add("shadow-2xl");
+            } else {
+                nav.classList.remove("bg-[#021713]");
+                nav.classList.add("bg-transparent");
+                nav.classList.add("shadow-md");
+                nav.classList.remove("shadow-2xl");
+            }
+        });
+    </script>
     <script>
         feather.replace();
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        })
+        ScrollReveal().reveal('#model-1', {
+            duration: 2000,
+            origin: 'right',
+            distance: '100px'
+        });
+
+        ScrollReveal().reveal('#highlight', {
+            duration: 2000,
+            origin: 'left',
+            distance: '100px'
+        });
+
+        ScrollReveal().reveal('#tentangkami', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '100px'
+        });
     </script>
 </body>
 
